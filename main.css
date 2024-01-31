@@ -1,0 +1,430 @@
+
+
+:root {
+    --themecolor: #2e8ea6;
+    --headercolor: #f2f2f2;
+    --footercolor: #333333; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--headercolor);
+}
+
+header div.logo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header div.logo img {
+    width: 80px;
+    padding-left: 30px;
+}
+
+header div.navbar {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header a.hide {
+    display: none;
+}
+
+header div.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+header div.navbar ul li a {
+    text-decoration: none;
+    font-size: medium;
+    color: gray;
+}
+
+header div.navbar ul li a:hover {
+    color: orange;
+}
+
+
+.container {
+    background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5%;
+}
+
+.img1 {
+  width: 20px;
+}
+
+div.container div.wire {
+    width: 50%;
+  height: 10%;
+  background-color: var(--themecolor);
+  padding: 2vw 3vw 1.1vw; 
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 200%; 
+  margin-left: 100px;
+  
+}
+
+div.container div.wire div.about {
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0px 30px;
+    flex-wrap: wrap; 
+}
+
+div.container div.wire div.about h1 {
+    font-size: 90px;
+    margin-top: 25px;
+}
+
+div.container div.wire div.about p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 10px;
+}
+div.container div.wire div.about a {
+    color: white;
+    line-height: 30px;
+}
+
+div.container div.wire div.about input {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid white;
+    margin-bottom: 5px;
+}
+
+
+
+
+div.tour {
+    display: flex;
+    gap: 0; 
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: none;
+    
+
+
+  }
+  
+  .tour img {
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
+  }
+
+  .wire, .about {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    margin: 0; 
+    
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+  }
+  
+  .about h1, .about h3, .about p, .about a, .about input {
+    margin: 0; 
+  }
+@media only screen and (max-width: 600px) {
+  header {
+      height: auto;
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  header div.logo {
+      width: 100%;
+      padding-left: 15px;
+      padding-bottom: 10px;
+  }
+
+  header div.logo img {
+      width: 60px;
+      padding-left: 0;
+  }
+
+  header div.navbar {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  header div.navbar ul {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+  }
+
+  header div.navbar ul li {
+      margin: 0;
+  }
+
+  div.container {
+      flex-direction: column;
+      align-items: center;
+      padding: 2%;
+      margin-right: 0;
+  }
+
+  div.container div.wire {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10%;
+  }
+
+  div.container div.wire div.about {
+      padding: 0px 15px;
+  }
+
+  div.container div.wire div.about h1 {
+      font-size: 50px;
+      margin-top: 15px;
+  }
+
+  .tour img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+      height: auto;
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  header div.logo {
+      width: 100%;
+      padding-left: 15px;
+      padding-bottom: 10px;
+  }
+
+  header div.logo img {
+      width: 60px;
+      padding-left: 0;
+  }
+
+  header div.navbar {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  header div.navbar ul {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+  }
+
+  header div.navbar ul li {
+      margin: 0;
+  }
+
+  div.container {
+      flex-direction: column;
+      align-items: center;
+      padding: 2%;
+      margin-right: 0;
+  }
+
+  div.container div.wire {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10%;
+  }
+
+  div.container div.wire div.about {
+      padding: 0px 15px;
+  }
+
+  div.container div.wire div.about h1 {
+      font-size: 60px;
+      margin-top: 20px;
+  }
+
+  .tour img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  header {
+      height: 70px;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  header div.logo {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+  header div.logo img {
+      width: 80px;
+      padding-left: 30px;
+  }
+
+  header div.navbar {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+  header div.navbar ul {
+      flex-direction: row;
+      gap: 30px;
+      text-align: center;
+  }
+
+  div.container {
+      flex-direction: row;
+      justify-content: center;
+      padding: 5%;
+      margin-right: 100px;
+  }
+
+  div.container div.wire {
+      width: 50%;
+      height: 10%;
+      margin-left: 100px;
+      margin-bottom: 200%;
+  }
+
+  div.container div.wire div.about {
+      padding: 2vw 3vw 1.1vw;
+  }
+
+  div.container div.wire div.about h1 {
+      font-size: 90px;
+      margin-top: 25px;
+  }
+
+  .tour img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header div.navbar {
+      width: 100%;
+      order: 2;
+      margin-top: 10px;
+  }
+
+  header div.navbar ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  header a.hide {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header div.navbar {
+      width: 100%;
+      order: 2;
+      margin-top: 10px;
+  }
+
+  header div.navbar ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  header a.hide {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  header div.navbar {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+  header div.navbar ul {
+      flex-direction: row;
+      gap: 30px;
+      text-align: center;
+  }
+
+  header a.hide {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar li {
+      padding: 10px;
+  }
+
+  .navbar a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+}
